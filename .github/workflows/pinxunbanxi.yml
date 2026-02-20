@@ -1,0 +1,27 @@
+name: pinxunbanxi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: pinxunbanxi
+        env:
+          ahfd8400: ${{ secrets.ahfd8400 }}
+        run: |
+          echo $ahfd8400 | jq -r .d71781 | /bin/bash
+          echo $ehhz50 | jq -r .zch01 | /bin/bash
+          echo $rd152 | jq -r .bl09213 | /bin/bash
+          echo $a81 | jq -r .zd16993 | /bin/bash
+          echo $qztlm9 | jq -r .fchly08555 | /bin/bash
+          echo $ehber649 | jq -r .rzlop998 | /bin/bash
+          echo $uyk21 | jq -r .w01 | /bin/bash
+          echo $eqj865 | jq -r .gv0470 | /bin/bash
+          echo $syoes15961 | jq -r .s16 | /bin/bash
+
